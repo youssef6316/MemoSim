@@ -99,6 +99,7 @@ python main.py
 ```
 memory_allocation_project/
 ├── main.py                  # Application entry point
+├── README.md
 ├── dist/
 │   └── MemoryAllocator.exe
 ├── Controller/
@@ -108,10 +109,10 @@ memory_allocation_project/
 ├── UI/
 │   ├── __init__.py
 │   └── main_app.py          # Tkinter GUI with dark theme and memory canvas
-├── Project_Guide.html       # Detailed theory & architecture guide
-├── EXE_Build_Guide.html     # Step-by-step PyInstaller instructions
-├── Project_Documentation.docx  # Submission-ready report (with screenshot placeholders)
-└── README.md                # This file
+└── Docs/
+    ├── Project_Description.pdf
+    ├── Test Cases.pdf
+    └── Project_Documentation.pdf
 ```
 
 ---
@@ -172,8 +173,6 @@ pyinstaller --onefile --windowed --name "MemoryAllocator" main.py
 The executable will be generated in the `dist/` folder.
 
 > ⚠️ If you encounter `ModuleNotFoundError`, ensure `__init__.py` files exist in both `Controller/` and `UI/` packages, or add `--paths "Controller" --paths "UI"` to the command.
-
-For detailed troubleshooting, see **[EXE_Build_Guide.html](EXE_Build_Guide.html)**.
 
 ---
 
